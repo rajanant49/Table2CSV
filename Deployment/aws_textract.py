@@ -100,8 +100,8 @@ if __name__=="__main__":
     image_path = 'Predicted Quarterly/inferenced_image_0_21.jpeg'
     start_time = time.time()
     client = boto3.client('textract',
-                      aws_access_key_id = 'AKIAZDCXDP66LVADMPNV',
-                      aws_secret_access_key = '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',
+                      aws_access_key_id = '..',
+                      aws_secret_access_key = '..',
                       region_name = 'us-west-2')
     dataframes = extract_table(image_path,client)
     delta = time.time()-start_time
