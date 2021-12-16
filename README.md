@@ -14,7 +14,7 @@ TableNet is a modern deep learning architecture that was proposed by a team from
 
 Architecture: The architecture is based out of Long et al., an encoder-decoder model for semantic segmentation. The same encoder/decoder network is used as the FCN architecture for table extraction. The images are preprocessed and modified using the Tesseract OCR. It is the pixel-wise detection of tabular sub-image while tabular structure recognition involves segmentation of the individual rows and columns in the detected table. The model consists of two parts which are encoder and decoder. The pre-trained VGG19 model is introduced as the baseline encoder model.
 
-Some results - 
+### Some results - 
 ![im5](https://github.com/rajanant49/Table2CSV/blob/main/data/im5.png?raw=true)
 ![im6](https://github.com/rajanant49/Table2CSV/blob/main/data/im6.png?raw=true)
 
@@ -26,7 +26,7 @@ Some results -
 * We use the open-source framework Detectron2 to train models on the TableBank. Detectron2 is a high-quality and high-performance codebase for object detection research, which supports many state-of-the-art algorithms. In this task, we use the Faster R-CNN algorithm with the ResNeXt as the backbone network architecture, where the parameters are pre-trained on the ImageNet dataset. 
 * Pretrained Model on TableBank was used and fintuned on Fintabnet dataset. The TableBank containes data related to mostly Bordered Tables whereas FinTabNet contains mainly borderless type table . 
 
-Some Results - 
+### Some Results - 
 ![im3](https://github.com/rajanant49/Table2CSV/blob/main/data/im3.png?raw=true)
 ![im4](https://github.com/rajanant49/Table2CSV/blob/main/data/im4.png?raw=true)
 
@@ -38,7 +38,7 @@ Some Results -
 * This task is handled by [AWS Textract](https://aws.amazon.com/textract/) , which is capable of recognizing the tabular structure in an image as well as extraction of the tabular data into json format . 
 * The json file recieved is then manipulated using custom functions to convert into a csv file . 
 
-Some Results - 
+### Some Results - 
 ![im1](https://github.com/rajanant49/Table2CSV/blob/main/data/im1.jpeg?raw=true)
 ![im2](https://github.com/rajanant49/Table2CSV/blob/main/data/im2.jpeg?raw=true)
 
